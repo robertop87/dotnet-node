@@ -5,6 +5,7 @@ RUN apt-get update -q \
     && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
       ca-certificates \           
       apt-transport-https \
+	  zip \
 	  git \
 	  curl \
 	  wget \
