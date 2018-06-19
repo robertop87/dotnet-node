@@ -25,3 +25,6 @@ RUN npm install --global bower gulp-cli @angular/cli
 
 # Install sonarscanner for dotnet
 RUN dotnet tool install --global dotnet-sonarscanner --version 4.3.1
+RUN echo "# Add .NET Core SDK tools export" >> ~/.bash_profile
+RUN echo 'PATH="$PATH:/root/.dotnet/tools"' >> ~/.bash_profile
+
