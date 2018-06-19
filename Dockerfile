@@ -23,3 +23,5 @@ RUN apt-get install --yes build-essential
 # install npm tools
 RUN npm install --global bower gulp-cli @angular/cli
 
+# Install sonarscanner for dotnet
+RUN dotnet tool install --global dotnet-sonarscanner --version 4.3.1
