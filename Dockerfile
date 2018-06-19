@@ -23,8 +23,9 @@ RUN apt-get install --yes build-essential
 # install npm tools
 RUN npm install --global bower gulp-cli @angular/cli
 
-# Install sonarscanner for dotnet
-RUN dotnet tool install --global dotnet-sonarscanner --version 4.3.1
+# Set dotnet tools path
 RUN echo "# Add .NET Core SDK tools export" >> ~/.bash_profile
 RUN echo 'export PATH="$PATH:/root/.dotnet/tools"' >> ~/.bash_profile
 
+# Install sonarscanner for dotnet
+RUN dotnet tool install --global dotnet-sonarscanner --version 4.3.1
