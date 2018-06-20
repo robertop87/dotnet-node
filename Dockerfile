@@ -24,7 +24,7 @@ RUN apt-get install --yes build-essential
 RUN npm install --global bower gulp-cli @angular/cli
 
 # Set dotnet tools path
-ENV PATH="/root/.dotnet/tools:${PATH}"
+# ENV PATH="/root/.dotnet/tools:${PATH}"
 
 # Install sonarscanner for dotnet
-RUN dotnet tool install --global dotnet-sonarscanner --version 4.3.1
+# RUN dotnet tool install --global dotnet-sonarscanner --version 4.3.1
