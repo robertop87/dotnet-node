@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:latest
+FROM microsoft/dotnet:2.1-sdk
 MAINTAINER Luis Roberto Perez<luis.robertop87@gmail.com>
 # Install required packages
 RUN apt-get update -q \
